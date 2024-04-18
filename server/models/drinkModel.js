@@ -2,6 +2,9 @@ const mongoose = require('mongoose')
 
 const Schema = mongoose.Schema
 
+const noDrinkPenalty = 2
+const pointMappings = [-2, -1, 0, 1, noDrinkPenalty]
+
 const drinkSchema = new Schema({
   name: {
     type: String,
@@ -9,43 +12,42 @@ const drinkSchema = new Schema({
   },
   teamname: {
     type: String,
-    enum: ["team0", "team1", "team2"],
     required: true
   },
   bar0: {
-    type: String,
-    enum: ["bogeydrink", "pardrink", "birdie", "nodrink"],
-    default: "nodrink",
+    type: Number,
+    enum: pointMappings,
+    default: noDrinkPenalty,
     required: true
   },
   bar1: {
-    type: String,
-    enum: ["bogeydrink", "pardrink", "birdie", "nodrink"],
-    default: "nodrink",
+    type: Number,
+    enum: pointMappings,
+    default: noDrinkPenalty,
     required: true
   },
   bar2: {
-    type: String,
-    enum: ["bogeydrink", "pardrink", "birdie", "nodrink"],
-    default: "nodrink",
+    type: Number,
+    enum: pointMappings,
+    default: noDrinkPenalty,
     required: true
   },
   bar3: {
-    type: String,
-    enum: ["bogeydrink", "pardrink", "birdie", "nodrink"],
-    default: "nodrink",
+    type: Number,
+    enum: pointMappings,
+    default: noDrinkPenalty,
     required: true
   },
   bar4: {
-    type: String,
-    enum: ["bogeydrink", "pardrink", "birdie", "nodrink"],
-    default: "nodrink",
+    type: Number,
+    enum: pointMappings,
+    default: noDrinkPenalty,
     required: true
   },
   bar5: {
-    type: String,
-    enum: ["bogeydrink", "pardrink", "birdie", "nodrink"],
-    default: "nodrink",
+    type: Number,
+    enum: pointMappings,
+    default: noDrinkPenalty,
     required: true
   }
 }, { timestamps: true })
