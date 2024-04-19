@@ -2,30 +2,17 @@
   display: grid;
   grid-template-columns: 4fr 2fr 1fr;
   grid-gap: 10px;
-}
-
-.collapsible {
   background-color: #777;
   color: white;
-  cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
-  text-align: left;
   outline: none;
   font-size: 15px;
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
 .collapsible:after {
   content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
 }
 
 .active:after {
@@ -38,4 +25,9 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+}
+
+.inner_content {
+  display: grid;
+  grid-template-columns: 4fr 2fr 1fr;
 }
