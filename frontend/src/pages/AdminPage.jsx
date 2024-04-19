@@ -14,7 +14,7 @@ const AdminPage = () => {
     // Function to fetch users from the database
     const fetchUsers = async () => {
         try {
-            const response = await fetch('http://localhost:4000/api/drink/');
+            const response = await fetch('http://128.173.145.197:4000/api/drink/');
             const data = await response.json();
             console.log(data)
             setUsers(data);
@@ -26,7 +26,7 @@ const AdminPage = () => {
     // Function to fetch team name from the database
     const fetchTeamName = async () => {
         try {
-            const response = await fetch('http://localhost:4000/api/drink/');
+            const response = await fetch('http://128.173.145.197:4000/api/drink/');
             const data = await response.json();
             setTeamName(data.teamName);
         } catch (error) {
@@ -49,7 +49,7 @@ const AdminPage = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:4000/api/drink/', {
+            const response = await fetch('http://128.173.145.197:4000/api/drink/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -66,7 +66,7 @@ const AdminPage = () => {
     // Function to delete a user from the database
     const deleteUser = async (userName) => {
         try {
-            await fetch(`http://localhost:4000/api/drink/${userName}`, {
+            await fetch(`http://128.173.145.197:4000/api/drink/${userName}`, {
                 method: 'DELETE'
             });
             const updatedUsers = users.filter(user => user.name !== userName);
@@ -79,7 +79,7 @@ const AdminPage = () => {
     // Function to change the team name in the database
     const changeTeamName = async (newTeamName) => {
         try {
-            await fetch('http://localhost:4000/api/teamName', {
+            await fetch('http://128.173.145.197:4000/api/teamName', {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json'

@@ -51,7 +51,7 @@ const IndStandingRow = ({ userProfile }) => {
   return (
     <div>
       <div className="user_summary">
-        <Link to={`http://localhost:3000/${userProfile.name}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link to={`/${userProfile.name}`} style={{ textDecoration: 'none', color: 'inherit' }}>
           <p>{userProfile.name}</p>
         </Link>
         <p>{userProfile.score}</p>

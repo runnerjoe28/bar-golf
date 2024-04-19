@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {    
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:4000/api/drink');
+        const response = await fetch('http://128.173.145.197:4000/api/drink');
         console.log(response)
         const jsonData = await response.json();
         console.log(jsonData)

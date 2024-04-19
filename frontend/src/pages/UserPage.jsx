@@ -22,7 +22,7 @@ const UserPage = () => {
     useEffect(() => {
         const fetchUserScores = async () => {
             try {
-                const response = await fetch(`http://localhost:4000/api/drink/${username}`, {
+                const response = await fetch(`http://128.173.145.197:4000/api/drink/${username}`, {
                     method: 'GET',
                 }) // Replace with actual URL
                 const data = await response.json();
@@ -77,7 +77,7 @@ const UserPage = () => {
     // Function to handle update button click
     const handleUpdateClick = async () => {
         try {
-            const response = await fetch(`http://localhost:4000/api/drink/${username}`, {
+            const response = await fetch(`http://128.173.145.197:4000/api/drink/${username}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json'
