@@ -82,7 +82,7 @@ const UserPage = () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({scores})
+                body: JSON.stringify(scores)
             });
             const data = await response.json();
             console.log('Update successful:', data);
