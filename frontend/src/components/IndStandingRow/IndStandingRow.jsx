@@ -12,10 +12,25 @@ const IndStandingRow = ({userProfile}) => {
     }
   })
 
+  const handleCollapse = (event) => {
+    const button = event.currentTarget; // Get the button element that triggered the event
+    button.classList.toggle("active");
+
+    const content = button.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  }
+
   return (
     <div>
-      <button className="collapsible">
-      TEMP
+      <button className="collapsible" onClick={handleCollapse}>
+        <div className="profile_summary">
+          <p>{userProfile.name}</p>
+          <p>{score}</p>
+        </div>
       </button>
       <div className="content">
         <p>TEMP</p>

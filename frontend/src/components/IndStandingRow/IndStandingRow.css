@@ -1,3 +1,9 @@
+.profile_summary {
+  display: grid;
+  grid-template-columns: 4fr 2fr 1fr;
+  grid-gap: 10px;
+}
+
 .collapsible {
   background-color: #777;
   color: white;
