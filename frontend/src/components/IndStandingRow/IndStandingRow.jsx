@@ -50,19 +50,23 @@ const IndStandingRow = ({ userProfile }) => {
 
   return (
     <div>
-      <div className="profile_summary">
+      <div className="user_summary">
         <Link to={`http://localhost:3000/${userProfile.name}`} style={{ textDecoration: 'none', color: 'inherit' }}>
           <p>{userProfile.name}</p>
         </Link>
         <p>{userProfile.score}</p>
         <button className="collapsible" onClick={handleCollapse}></button>
       </div>
-      <div className="content">
+      <div className="user_content">
         {barData && barData.map(bar => (
-          <div className="inner_content">
+          <div className="user_inner_content">
             <p>{bar.name}</p>
+            <div className="user_drink_content">
             <p>{bar.drink}</p>
+            </div>
+            <div className="user_score_content">
             <p>{bar.score === 2 ? 'N/A' : bar.score}</p>
+            </div>
           </div>
         ))}
       </div>

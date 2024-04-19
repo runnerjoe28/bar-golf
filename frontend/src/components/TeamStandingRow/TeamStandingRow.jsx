@@ -16,7 +16,7 @@ const TeamStandingRow = ({teamProfile}) => {
 
   return (
     <div>
-      <div className="profile_summary">
+      <div className="team_profile_summary">
           <p>{teamProfile.teamname}</p>
           <p>{teamProfile.score}</p>
           <button className="collapsible" onClick={handleCollapse}></button>

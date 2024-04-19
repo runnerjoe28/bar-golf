@@ -82,10 +82,12 @@ const Home = () => {
   return (
     <div className="home">
       <div className="drink_table">
+       <h2 style={{marginBottom: '15px' }}>Individual Standings:</h2>
         {drinkData && drinkData.map(drink => (
           <IndStandingRow userProfile={drink}></IndStandingRow>
         ))}
-        <p>Pee pee</p>
+
+        <h2 style={{ marginTop: '30px', marginBottom: '15px' }}>Team Standings:</h2>
         {teamData && teamData.map(team => (
           <TeamStandingRow teamProfile={team}></TeamStandingRow>
         ))}

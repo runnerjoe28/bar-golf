@@ -1,33 +1,50 @@
-.profile_summary {
+.user_summary {
   display: grid;
   grid-template-columns: 4fr 2fr 1fr;
   grid-gap: 10px;
-  background-color: #777;
-  color: white;
+  background-color: var(--vt-maroon);
+  color: #f1f1f1;
   padding: 18px;
   width: 100%;
   border: none;
   outline: none;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .collapsible:after {
   content: '\002B';
+
 }
 
 .active:after {
   content: "\2212";
 }
 
-.content {
+.user_content {
+  display:grid;
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
+  color: #f1f1f1;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: var(--vt-burntOrange);
+  border: 2px solid black;
+  font-size: 15px;
+
 }
 
-.inner_content {
+.user_inner_content {
   display: grid;
-  grid-template-columns: 4fr 2fr 1fr;
+  grid-template-columns: 2fr 3fr auto;
+  column-gap:20px;
+  padding-bottom:10px;
+  
+}
+
+.user_drink_content {
+  grid-column: 2/3;
+}
+
+.user_score_content {
+  grid-column-start: 3;
 }
