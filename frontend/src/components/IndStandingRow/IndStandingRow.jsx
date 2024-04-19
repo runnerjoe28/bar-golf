@@ -62,7 +62,7 @@ const IndStandingRow = ({ userProfile }) => {
           <div className="inner_content">
             <p>{bar.name}</p>
             <p>{bar.drink}</p>
-            <p>{bar.score}</p>
+            <p>{bar.score === 2 ? 'N/A' : bar.score}</p>
           </div>
         ))}
       </div>
