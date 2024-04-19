@@ -123,6 +123,16 @@ const UserPage = () => {
                                 <td>{scores[barData.bar_number] === 2 ? 'N/A' : scores[barData.bar_number]}</td>
                             </tr>
                         ))}
+                                            {/* Total row */}
+                    <tr>
+                        <td colSpan="2">Total</td>
+                        <td>
+                            {Object.values(scores).reduce((acc, curr) => {
+                                if (curr !== 2) acc += curr;
+                                return acc;
+                            }, 0)}
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
