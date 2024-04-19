@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Helmet } from "react-helmet"
 
 // pages and components
 import Home from './pages/Home'

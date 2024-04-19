@@ -1,34 +1,39 @@
-import { useEffect } from 'react'
-import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
+import { useEffect, useState } from 'react'
 
 // components
-import WorkoutDetails from '../components/WorkoutDetails'
-import WorkoutForm from '../components/WorkoutForm'
+import IndStandingRow from '../components/IndStandingRow/IndStandingRow';
 
 const Home = () => {
-  const {workouts, dispatch} = useWorkoutsContext()
+  const [drinkData, setDrinkData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchWorkouts = async () => {
-      const response = await fetch('http://localhost:4000/api/workouts')
-      const json = await response.json()
-
-      if (response.ok) {
-        dispatch({type: 'SET_WORKOUTS', payload: json})
+  useEffect(() => {    
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://localhost:4000/api/drink');
+        console.log(response)
+        const jsonData = await response.json();
+        console.log(jsonData)
+        setDrinkData(jsonData);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setLoading(false);
       }
-    }
+    };
 
-    fetchWorkouts()
-  }, [dispatch])
+    fetchData();
+  }, []); // Empty dependency array means this effect runs once when the component mounts
+
 
   return (
     <div className="home">
-      <div className="workouts">
-        {workouts && workouts.map((workout) => (
-          <WorkoutDetails key={workout._id} workout={workout} />
+      <div className="drink_table">
+        {drinkData && drinkData.map(drink => (
+          <IndStandingRow userProfile={drink}></IndStandingRow>
         ))}
+        <p>Pee pee</p>
       </div>
-      <WorkoutForm />
     </div>
   )
 }
