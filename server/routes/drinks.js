@@ -3,21 +3,25 @@ const {
   getDrinks,
   getDrink,
   createDrink,
-  updateDrink
+  updateDrink,
+  deleteDrink
 } = require('../controllers/drinkController')
 
 const router = express.Router()
 
-// GET all workouts
+// GET all user
 router.get('/', getDrinks)
 
-// GET a single workout
+// GET a single user
 router.get('/:name', getDrink)
 
-// POST a new workout
+// POST a new user
 router.post('/', createDrink)
 
-// UPDATE a workout
+// UPDATE a user
 router.patch('/:name', updateDrink)
+
+// Delete a user
+router.delete('/:name', deleteDrink)
 
 module.exports = router

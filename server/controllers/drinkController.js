@@ -79,10 +79,24 @@ const updateDrink = async(req, res) => {
   res.status(200).json(drink)
 }
 
+// delete a drink
+const deleteDrink = async(req, res) => {
+  const { name } = req.params
+
+  const drink = await Drink.deleteOne({name: name})
+
+  if (!drink) {
+    return res.status(404).json({error: 'No such workout'})
+  }
+
+  res.status(200).json(drink)
+}
+
 
 module.exports = {
   getDrinks,
   getDrink,
   createDrink,
-  updateDrink
+  updateDrink,
+  deleteDrink
 }
