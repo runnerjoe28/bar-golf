@@ -1,4 +1,3 @@
-import barInfo from "../../assets/barInfo.json";
 import "./TeamStandingRow.css"
 
 const TeamStandingRow = ({teamProfile}) => {

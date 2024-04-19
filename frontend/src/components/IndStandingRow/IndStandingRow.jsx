@@ -1,14 +1,15 @@
 import barInfo from "../../assets/barInfo.json";
 import "./IndStandingRow.css"
+import { Link } from 'react-router-dom';
 
-const IndStandingRow = ({userProfile}) => {
-  
+const IndStandingRow = ({ userProfile }) => {
+
   let barData = []
 
   const barTags = ["bar0", "bar1", "bar2", "bar3", "bar4", "bar5"]
 
   barTags.forEach((tag, curBar) => {
-    
+
     const curBarInfo = barInfo.bar_info[curBar]
     const barScore = userProfile[tag]
 
@@ -40,19 +41,21 @@ const IndStandingRow = ({userProfile}) => {
     button.classList.toggle("active");
 
     const content = button.parentNode.nextElementSibling;
-    if (content.style.maxHeight){
+    if (content.style.maxHeight) {
       content.style.maxHeight = null;
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
-    } 
+    }
   }
 
   return (
     <div>
       <div className="profile_summary">
+        <Link to={`http://localhost:3000/${userProfile.name}`} style={{ textDecoration: 'none', color: 'inherit' }}>
           <p>{userProfile.name}</p>
-          <p>{userProfile.score}</p>
-          <button className="collapsible" onClick={handleCollapse}></button>
+        </Link>
+        <p>{userProfile.score}</p>
+        <button className="collapsible" onClick={handleCollapse}></button>
       </div>
       <div className="content">
         {barData && barData.map(bar => (

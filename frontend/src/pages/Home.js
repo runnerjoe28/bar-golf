@@ -6,7 +6,7 @@ import TeamStandingRow from '../components/TeamStandingRow/TeamStandingRow';
 
 const Home = () => {
   const [drinkData, setDrinkData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
   const [teamData, setTeamData] = useState(null);
 
   useEffect(() => {    
@@ -26,7 +26,7 @@ const Home = () => {
           let score = 0
           barTags.forEach((tag) => {
             let barScore = user[tag]
-            if (barScore != 2) {
+            if (barScore !== 2) {
               score += barScore
             }
           })
@@ -67,11 +67,11 @@ const Home = () => {
         
 
         setDrinkData(sortedJsonData);
-        setLoading(false);
+        // setLoading(false);
         setTeamData(sortedTeamData);
       } catch (error) {
         console.error('Error fetching data:', error);
-        setLoading(false);
+        // setLoading(false);
       }
     };
 

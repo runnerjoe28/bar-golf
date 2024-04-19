@@ -1,6 +1,7 @@
 {
     "bar_info": [
         {
+            "bar_number": "bar0",
             "bar_name": "The Tavern",
             "eagle": "Das Margarita",
             "birdie": "Beer Bong Mixed Drink",
@@ -8,6 +9,7 @@
             "bogey": "Normal Pregame Drink"
         },
         {
+            "bar_number": "bar1",
             "bar_name": "PK's",
             "eagle": "PK's Bombers/Porn Start Shot",
             "birdie": "Royal Flush",
@@ -15,6 +17,7 @@
             "bogey": "Beer/Seltzer"
         },
         {
+            "bar_number": "bar2",
             "bar_name": "Hokie House",
             "eagle": "Trash Can/Long Island",
             "birdie": "Capri Sun/Grateful Dead",
@@ -22,6 +25,7 @@
             "bogey": "Beer/Seltzer"
         },
         {
+            "bar_number": "bar3",
             "bar_name": "Champs",
             "eagle": "Any Double",
             "birdie": "Single/Gummy Bear Shot",
@@ -29,6 +33,7 @@
             "bogey": "Water"
         },
         {
+            "bar_number": "bar4",
             "bar_name": "Rivermill",
             "eagle": "Car Bomb",
             "birdie": "Green Tea Shooter/Double Rum and Coke",
@@ -36,6 +41,7 @@
             "bogey": "Water"
         },
         {
+            "bar_number": "bar5",
             "bar_name": "TOTS",
             "eagle": "Rail",
             "birdie": "Casey's Special",

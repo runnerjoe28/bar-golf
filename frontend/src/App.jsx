@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Helmet } from "react-helmet"
 
 // pages and components
 import Home from './pages/Home'
 import Navbar from './components/Navbar/Navbar'
+import UserPage from "./pages/UserPage"
 import "./App.css"
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
         <div className="pages">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/:username" element={<UserPage />} />
           </Routes>
         </div>
       </BrowserRouter>
