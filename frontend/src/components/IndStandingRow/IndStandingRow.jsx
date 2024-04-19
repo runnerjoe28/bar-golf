@@ -3,7 +3,6 @@ import "./IndStandingRow.css"
 
 const IndStandingRow = ({userProfile}) => {
   
-  let score = 0
   let barData = []
 
   const barTags = ["bar0", "bar1", "bar2", "bar3", "bar4", "bar5"]
@@ -29,10 +28,6 @@ const IndStandingRow = ({userProfile}) => {
 
     const barDrink = valueMap[barScore]
 
-    if (barScore != 2) {
-      score += barScore
-    }
-
     barData.push({
       name: curBarInfo.bar_name,
       drink: barDrink,
@@ -56,7 +51,7 @@ const IndStandingRow = ({userProfile}) => {
     <div>
       <div className="profile_summary">
           <p>{userProfile.name}</p>
-          <p>{score}</p>
+          <p>{userProfile.score}</p>
           <button className="collapsible" onClick={handleCollapse}></button>
       </div>
       <div className="content">
