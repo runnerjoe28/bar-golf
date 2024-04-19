@@ -3,11 +3,11 @@ Site wide colors from Virginia Tech
 */
 :root {
     /* Primary colors */
-    --vt-maroon:#861f41;
-    --vt-burntOrange:#e5751f;
+    --vt-maroon: #861f41;
+    --vt-burntOrange: #e5751f;
     --vt-hokieStone: #75787b;
     --vt-white: #ffffff;
-  
+
     /* Secondary colors */
     --vt-purple: #642667;
     --vt-pink: #ce0058;
@@ -17,7 +17,7 @@ Site wide colors from Virginia Tech
     --vt-grey: #d7d2cb;
     --vt-smoke: #e5e1e6;
     --vt-impactOrange: #ca4f00;
-  }
+}
 
 /* 
 * general
@@ -27,13 +27,13 @@ Site wide colors from Virginia Tech
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-  }
-  
-  body,
-  html {
+}
+
+body,
+html {
     height: 100%;
     margin: 0;
-  }
+}
 
 /* 
 * User Page
@@ -97,4 +97,54 @@ Site wide colors from Virginia Tech
 
 .user-page button:hover {
     background-color: #770a0a;
+}
+
+
+/* 
+* Admin Page
+*/
+
+.admin-page {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.add-user-form,
+.change-team-form {
+    margin-bottom: 20px;
+}
+
+.add-user-form h3,
+.change-team-form h3,
+.users-list h3 {
+    margin-top: 0;
+}
+
+.users-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.users-list li {
+    margin-bottom: 10px;
+}
+
+.users-list li span {
+    margin-right: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.add-user-form,
+.change-team-form {
+    margin-bottom: 20px;
+}
+
+.form-field {
+    margin-bottom: 10px;
 }
