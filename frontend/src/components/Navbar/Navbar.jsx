@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <Link to="/" className="navbar-home-link">
           <FaHouseChimney size={30}/>
-          <span className="navbar-site-name">Luke's and Christian's Bar Golf</span>
+          <span className="navbar-site-name">Blacksburg Bar Golf</span>
         </Link>
       </div>
   );
