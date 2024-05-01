@@ -2,51 +2,51 @@
     "bar_info": [
         {
             "bar_number": "bar0",
-            "bar_name": "The Tavern",
-            "eagle": "Das Margarita",
-            "birdie": "Beer Bong Mixed Drink",
-            "par": "Beer Bong Beer/Seltzer",
-            "bogey": "Normal Pregame Drink"
+            "bar_name": "Sharkeys",
+            "eagle": "2 Long Islands",
+            "birdie": "Long Island + Bomb/Beer",
+            "par": "Long Island or Happy Hour Special",
+            "bogey": "Bomb/Beer"
         },
         {
             "bar_number": "bar1",
-            "bar_name": "PK's",
-            "eagle": "PK's Bombers/Porn Start Shot",
-            "birdie": "Royal Flush",
-            "par": "Any Single",
-            "bogey": "Beer/Seltzer"
+            "bar_name": "Cellar",
+            "eagle": "2 Pitchers",
+            "birdie": "Small Pitcher + cocktail/shooter",
+            "par": "Small Pitcher",
+            "bogey": "Beer/Shooter"
         },
         {
             "bar_number": "bar2",
             "bar_name": "Hokie House",
-            "eagle": "Trash Can/Long Island",
-            "birdie": "Capri Sun/Grateful Dead",
-            "par": "Mug of Beer/Seltzer/Bold Rock",
-            "bogey": "Beer/Seltzer"
+            "eagle": "2 Trash Cans",
+            "birdie": "Trash Can + Mixed Drink",
+            "par": "Trash Can",
+            "bogey": "Double"
         },
         {
             "bar_number": "bar3",
-            "bar_name": "Champs",
-            "eagle": "Any Double",
-            "birdie": "Single/Gummy Bear Shot",
-            "par": "Beer/Seltzer",
-            "bogey": "Water"
+            "bar_name": "PK's",
+            "eagle": "2 Pitchers and Cocktail",
+            "birdie": "2 Pitchers",
+            "par": "Pitcher or Long Island",
+            "bogey": "Beer/Shooter"
         },
         {
             "bar_number": "bar4",
             "bar_name": "Rivermill",
-            "eagle": "Car Bomb",
-            "birdie": "Green Tea Shooter/Double Rum and Coke",
-            "par": "Beer/Seltzer",
-            "bogey": "Water"
+            "eagle": "2 Car Bombs and a Double",
+            "birdie": "2 Car Bombs",
+            "par": "Car Bomb",
+            "bogey": "Double or Beer"
         },
         {
             "bar_number": "bar5",
             "bar_name": "TOTS",
-            "eagle": "Rail",
-            "birdie": "Casey's Special",
-            "par": "Any Single",
-            "bogey": "PBR"
+            "eagle": "2 Rails",
+            "birdie": "Rail + Mixed Drink",
+            "par": "Rail",
+            "bogey": "Mixed Drink or 2 Beers"
         }
     ]
 }
